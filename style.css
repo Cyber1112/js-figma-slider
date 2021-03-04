@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: black;
+}
+.container{
+    max-width: 1440px;
+    height: 783px;
+}
+.main-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 107px 134.55px 123.72px;
+}
+.project-header{
+    position: relative;
+    font-family: Yeseva One;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 37px;
+    letter-spacing: -0.07em;
+    text-align: left;
+    color: #E3B873;
+    margin-bottom: 27px;
+    margin-top: 176px;
+}
+.project-header::after{
+    content: "";
+    position: absolute;
+    width: 92px;
+    height: 1px;
+    background:#E3B873;
+    top: 52px;
+    left: 161px;
+}
+.project-content{
+    font-family: Nunito Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 442px;
+    height: 82px;
+    margin-bottom: 42px;
+    color: white;
+}
+.info-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+}
+.controlers{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 85px;
+    width: 150px;
+}
+input[type=radio]{
+    margin: auto 0;
+}
+input[type=radio]:checked{
+    margin: auto 0;
+}
+.left-arrow, .right-arrow{
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+.title-header{
+    font-family: Yeseva One;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-transform: uppercase;
+    color: #E3B873;
+    margin-bottom: 9px;
+}
+.title-content{
+    font-family: Nunito Sans;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+}
+
+.apartment-areas{
+    margin: 107px;
+}
+.apartment-header{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 53px;
+}
+.place-city{
+    font-family: Yeseva One;
+    font-style: normal;
+    cursor: pointer;
+    font-weight: normal;
+    font-size: 14px;
+    margin-right: 60px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.active {
+    color: #E3B873;
+    border-bottom: 1px solid #E3B873;
+}
+.apartment-images{
+    width: 679px;
+    height: 482px;
+}

@@ -51,10 +51,14 @@ body{
     margin-bottom: 42px;
     color: white;
 }
-.info-container{
+
+.project-info .active{
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 20px;
+}
+.info-container{
+    display: none;
 }
 .controlers{
     display: flex;
@@ -62,11 +66,20 @@ body{
     margin-top: 85px;
     width: 150px;
 }
-input[type=radio]{
-    margin: auto 0;
+.slider-items{
+    display: flex;
+    margin: auto 30px;
 }
-input[type=radio]:checked{
-    margin: auto 0;
+.slider-items .item{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    margin: 0 7px;
+}
+.slider-items .item.active{
+    background-color: #FFFFFF;
 }
 .left-arrow, .right-arrow{
     color: white;
@@ -114,10 +127,13 @@ input[type=radio]:checked{
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.3);
 }
-
-.active {
+.apartment-header .active{
     color: #E3B873;
     border-bottom: 1px solid #E3B873;
+}
+
+.slider-items .active {
+    background-color: #FFFFFF;
 }
 .apartment-images{
     width: 679px;

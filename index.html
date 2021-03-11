@@ -26,55 +26,19 @@
             <div class="info-container">
               <div class="city-info">
                 <div class="title-header">City:</div>
-                <div class="title-content">Rostov-on-Don <br>LCD admiral</div>
+                <div class="title-content title_city"></div>
               </div>
               <div class="apart-info">
                 <div class="title-header">apartment area:</div>
-                <div class="title-content">81 m2</div>
+                <div class="title-content title_area"></div>
               </div>
               <div class="repair-info">
                 <div class="title-header">Repair time:</div>
-                <div class="title-content">3.5 months</div>
+                <div class="title-content title_repair"></div>
               </div>
               <div class="cost-info">
                 <div class="title-header">Repair Cost:</div>
-                <div class="title-content">Upon request</div>
-              </div>
-            </div>
-            <div class="info-container">
-              <div class="city-info">
-                <div class="title-header">City:</div>
-                <div class="title-content">Sochi<br>Thieves</div>
-              </div>
-              <div class="apart-info">
-                <div class="title-header">apartment area:</div>
-                <div class="title-content">105 m2</div>
-              </div>
-              <div class="repair-info">
-                <div class="title-header">Repair time:</div>
-                <div class="title-content">4 months</div>
-              </div>
-              <div class="cost-info">
-                <div class="title-header">Repair Cost:</div>
-                <div class="title-content">Upon request</div>
-              </div>
-            </div>
-            <div class="info-container">
-              <div class="city-info">
-                <div class="title-header">City:</div>
-                <div class="title-content">Rostov-on-Don <br>Patriotic</div>
-              </div>
-              <div class="apart-info">
-                <div class="title-header">apartment area:</div>
-                <div class="title-content">93 m2</div>
-              </div>
-              <div class="repair-info">
-                <div class="title-header">Repair time:</div>
-                <div class="title-content">3 months</div>
-              </div>
-              <div class="cost-info">
-                <div class="title-header">Repair Cost:</div>
-                <div class="title-content">Upon request</div>
+                <div class="title-content title_cost"></div>
               </div>
             </div>
           </div>
@@ -82,28 +46,22 @@
           <div class="controlers">
               <div class="left-arrow" onclick="previousSlide()"><i class="fas fa-arrow-left"></i></div>
               <div class="slider-items">
+                <div class="item item1" onclick="currentSlide(0)"></div>
                 <div class="item item1" onclick="currentSlide(1)"></div>
                 <div class="item item1" onclick="currentSlide(2)"></div>
-                <div class="item item1" onclick="currentSlide(3)"></div>
               </div>
               <div class="right-arrow" onclick="nextSlide()"><i class="fas fa-arrow-right"></i></div>
           </div>
         </div>
         <div class="apartment-areas">
           <div class="apartment-header">
-            <div class="place-city active" onclick="currentSlide(1)">Rostov-on-Don, Admiral</div>
-            <div class="place-city" onclick="currentSlide(2)">Sochi Thieves</div>
-            <div class="place-city" onclick="currentSlide(3)">Rostov-on-Don Patriotic</div>
+            <div class="place-city active" onclick="currentSlide(0)">Rostov-on-Don, Admiral</div>
+            <div class="place-city" onclick="currentSlide(1)">Sochi Thieves</div>
+            <div class="place-city" onclick="currentSlide(2)">Rostov-on-Don Patriotic</div>
           </div>
           <div class="apartment-images">
-            <div class="apart-img">
-              <img src="images/image1.png" alt="first">
-            </div>
-            <div class="apart-img">
-              <img src="images/image2.png" alt="second">
-            </div>
-            <div class="apart-img">
-              <img src="images/image3.png" alt="third">
+            <div class="apart-img" id="uniqueApart">
+              <img src="" alt="" id="catalogueImg">
             </div>
           </div>
         </div>
